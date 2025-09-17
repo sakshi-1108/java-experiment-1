@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class MinutesConverter {
+    static Scanner sc = new Scanner(System.in);
+
+    // Convert minutes to Years, Months, Days
+    static void minutesToYMD() {
+        System.out.print("Enter total minutes: ");
+        long minutes = sc.nextLong();
+
+        long days = minutes / (60 * 24);
+        long years = days / 365;
+        days %= 365;
+        long months = days / 30;
+        days %= 30;
+
+        System.out.println("Years: " + years + ", Months: " + months + ", Days: " + days);
+    }
+
+    public static void main(String[] args) {
+        //  Printing name and roll number here
+        System.out.println("Name: Sakshi");
+        System.out.println("Roll No.: 24csu288");
+        System.out.println("----------------------");
+
+        minutesToYMD();
+    }
+}
