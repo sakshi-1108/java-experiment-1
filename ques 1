@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class BasicOperations {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Print name and roll number
+        System.out.println("Name: Sakshi");
+        System.out.println("Roll No.: 24csu288");
+        System.out.println("----------------------");
+
+        // Input two numbers
+        System.out.print("Enter first number: ");
+        double num1 = sc.nextDouble();
+
+        System.out.print("Enter second number: ");
+        double num2 = sc.nextDouble();
+
+        // Perform operations
+        double sum = num1 + num2;
+        double difference = num1 - num2;
+        double product = num1 * num2;
+        double quotient = num1 / num2; // assuming num2 != 0
+        double modulus = num1 % num2;
+
+        // Display results
+        System.out.println("Addition: " + sum);
+        System.out.println("Subtraction: " + difference);
+        System.out.println("Multiplication: " + product);
+        System.out.println("Division: " + quotient);
+        System.out.println("Modulus: " + modulus);
+
+            }
+}
