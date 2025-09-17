@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+ class ReverseThreeDigit {
+    public static void main(String[] args) {
+// Print name & roll number
+        System.out.println("Name: Sakshi");
+        System.out.println("Roll No.: 24csu288");
+        System.out.println("----------------------");
+
+
+        Scanner sc = new Scanner(System.in);
+
+        // Input a 3-digit number
+        System.out.print("Enter a 3-digit number: ");
+        int num = sc.nextInt();
+
+        // Extract digits
+        int digit1 = num / 100;        // First digit
+        int digit2 = (num / 10) % 10;  // Second digit
+        int digit3 = num % 10;         // Third digit
+
+        // Reverse number
+        int reverse = (digit3 * 100) + (digit2 * 10) + digit1;
+
+        // Output result
+        System.out.println("Reversed number: " + reverse);
+
+           }
+}
