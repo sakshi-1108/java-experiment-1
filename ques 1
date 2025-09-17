@@ -11,6 +11,7 @@ public class BasicOperations {
 
         // Input two numbers
         System.out.print("Enter first number: ");
+
         double num1 = sc.nextDouble();
 
         System.out.print("Enter second number: ");
